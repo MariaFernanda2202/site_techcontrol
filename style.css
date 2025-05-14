@@ -24,6 +24,8 @@ footer {
   .footer-logo img {
     height: 40px;
     background-color: #1b2235;
+    border: 0;
+    margin: 0;
   }
 
   .footer-menu {
@@ -44,6 +46,7 @@ footer {
   .footer-menu a:hover {
     text-decoration: underline;
     text-decoration: none;
+    background-color: #1b2235;
   }
 
   @media (max-width: 600px) {
@@ -51,11 +54,13 @@ footer {
       flex-direction: column;
       align-items: center;
       text-align: center;
+      background-color: #1b2235;
     }
 
     .footer-menu {
       margin-top: 15px;
       justify-content: center;
+      background-color: #1b2235;
     }
   }
 
