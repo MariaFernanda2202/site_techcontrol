@@ -1,0 +1,124 @@
+*{
+    background-color: #222E50;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    
+}
+
+footer {
+    background-color: #1b2235;
+    color: white;
+    padding: 20px 30px;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #1b2235;
+  }
+
+  .footer-logo img {
+    height: 40px;
+    background-color: #1b2235;
+  }
+
+  .footer-menu {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    font-size: 12px;
+    background-color: #1b2235;
+  }
+
+  .footer-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: #1b2235;
+  }
+
+  .footer-menu a:hover {
+    text-decoration: underline;
+    text-decoration: none;
+  }
+
+  @media (max-width: 600px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-menu {
+      margin-top: 15px;
+      justify-content: center;
+    }
+  }
+
+  
+.container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+.titulo_form{
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+form {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow:  yellow;
+    width: 100%;
+    max-width: 500px;
+}
+label {
+    color: #F3D62E;
+    display: block;
+    margin-top: 15px;
+}
+input, textarea {
+    background: none;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 2px solid #F3D62E;
+    border-radius: 10px;
+    transition: none;
+    outline: none;
+    box-shadow: none;
+    color: #F3D62E;
+}
+
+button {
+    background-color: #FBE541;
+    margin-top: 20px;
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 480px) {
+    form {
+    padding: 20px;
+    }
+    input, textarea {
+    font-size: 16px;
+    border: auto #222E50;
+    }
+    button {
+    font-size: 16px;
+    padding: 12px;
+    }
+}

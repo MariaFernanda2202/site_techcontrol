@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TechControl</title>
+</head>
+<body>
+ <footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <!-- Substitua pelo caminho da sua logo -->
+      <img src="logo.png" alt="Logo" />
+    </div>
+    <div class="footer-menu">
+      <a href="#">Registrar Demanda</a>
+      <a href="#">Fale Conosco</a>
+      <a href="#">Entrar</a>
+    </div>
+  </div>
+</footer>
+
+  <h1 class="titulo_form">Formulário de Contato</h1>
+
+    <div class="container">
+        <form action="#" method="post">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required pattern="\d{11}" title="Digite 11 números, apenas dígitos.">
+
+            <label for="mensagem">Explique melhor sua demanda:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+</body>
+</html>
