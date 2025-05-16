@@ -113,6 +113,23 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+.boxum{
+  display: flex;
+  background-color: #F3D62E;
+  justify-content: center;
+  padding: 10em;
+  width: 80%;  
+}
+.texto{
+  text-align: center;
+  padding: 10em;
+  color: aliceblue;
+}
+.imgs_box{
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
 
 @media (max-width: 480px) {
     form {
@@ -127,3 +144,5 @@ button:hover {
     padding: 12px;
     }
 }
+
+
