@@ -1,16 +1,17 @@
 *{
-    background-color: #222E50;
+    background-color:#1b2235;
 }
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
-    
+    background-color:#1b2235
 }
 
-footer {
+header {
     background-color: #1b2235;
     color: white;
-    padding: 20px 30px;
+    padding: 8px 20px;
+    border-bottom: 2px solid #F3D62E;
   }
 
   .footer-container {
@@ -32,8 +33,12 @@ footer {
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
-    font-size: 12px;
+    font-size: 1.1em;
     background-color: #1b2235;
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
   }
 
   .footer-menu a {
@@ -111,24 +116,43 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3 ;
+}
+
+.containerboxes{
+  display: flex;
+  padding: 4em;
+  justify-content: center;
 }
 .boxum{
   display: flex;
-  background-color: #F3D62E;
-  justify-content: center;
-  padding: 10em;
-  width: 80%;  
+  justify-content: center; 
+  align-items: center;
+  /* box-shadow: 1px 1px 20px 4px #a597488a; */
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 10px;
+  border: 2px solid  #1b2235;
+  height: 30rem;
+}
+.kodchasan-regular {
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .texto{
   text-align: center;
-  padding: 10em;
+  padding: 2em;
   color: aliceblue;
+  font-size: 1.5rem;
 }
 .imgs_box{
   display: flex;
   justify-content: right;
   align-items: right;
+  height: 28em;
+  border-radius: 30px;
 }
 
 @media (max-width: 480px) {
