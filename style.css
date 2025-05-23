@@ -70,13 +70,15 @@ header {
   }
 
   
-.container {
+.container_form {
       display: flex;
       justify-content: center;
       align-items: center;
-
     }
 .titulo_form{
+    font-family: "Braah One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     display: flex;
     color: white;
     justify-content: center;
@@ -87,6 +89,8 @@ form {
     box-shadow:  yellow;
     width: 100%;
     max-width: 500px;
+    border: 1px solid #F3D62E;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 label {
     color: #F3D62E;
@@ -96,14 +100,14 @@ label {
 input, textarea {
     background: none;
     width: 100%;
-    padding: 8px;
+    padding-bottom: 8px;
     margin-top: 5px;
     border: 2px solid #F3D62E;
     border-radius: 10px;
     transition: none;
     outline: none;
     box-shadow: none;
-    color: #F3D62E;
+    color: #ffffff;
 }
 
 button {
@@ -113,48 +117,118 @@ button {
     width: 100%;
     border: none;
     border-radius: 15px;
+    color: #1b2235;
+    font-size: 15px;
 }
 
 button:hover {
-    background-color: #0056b3 ;
+    background-color: #1b2235 ;
+    color: #F3D62E;
+    
 }
-
-.containerboxes{
+select {
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #F3D62E;
+    border-radius: 10px;
+    width: 200px;
+    font-size: 13px;
+    background-color: none;
+    color: #F3D62E;
+  }
+select:focus {
+  outline: none;
+  box-shadow: #F3D62E;
+}
+.text_exp{
   display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 15px;
+}
+.containerboxes{
   padding: 4em;
   justify-content: center;
+  display: flex;
 }
-.boxum{
+.boxdireita{
   display: flex;
   justify-content: center; 
   align-items: center;
-  /* box-shadow: 1px 1px 20px 4px #a597488a; */
   font-family: "Kodchasan", sans-serif;
   font-weight: 400;
   font-style: normal;
   border-radius: 10px;
-  border: 2px solid  #1b2235;
+  border: 1px solid #f3d52e0e;
   height: 30rem;
+  margin: 10px;
 }
-.kodchasan-regular {
-  font-family: "Kodchasan", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+
 .texto{
+  display: flex;
   text-align: center;
   padding: 2em;
   color: aliceblue;
   font-size: 1.5rem;
 }
-.imgs_box{
+.imgs_box_direita{
   display: flex;
   justify-content: right;
   align-items: right;
   height: 28em;
   border-radius: 30px;
 }
+.imgs_box_esquerda{
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  height: 28em;
+  border-radius: 30px;
+}
+.boxesquerda{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 10px;
+  border: 1px solid #f3d52e0e;
+  height: 30rem;
+  margin: 10px;
+}
 
+.containerinstall a{
+  display: flex;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  background-color: #1b2235;
+  justify-content: center;
+}
+.divqr{
+  display: flex;
+  justify-content: center;
+}
+.divqr img{
+  display: block;
+  width: 50vw;
+  justify-content: center;
+}
+
+footer{
+  background-color: #090e1b;
+  height: 40vh;
+}
+/* .itensusados{
+  display: flex;
+  gap: 40%;
+  background-color: #1b2235;
+}
+.itensusados img{
+  width: 40px;
+} */
 @media (max-width: 480px) {
     form {
     padding: 20px;
