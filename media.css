@@ -1,0 +1,406 @@
+@media (min-width: 300px) and (max-width:480px){
+    header {
+      padding: 4px 5px;
+      font-size: 12px;
+      border-bottom: 2px solid #F3D62E;
+    }
+    form {
+      padding: 20px;
+    }
+    input, textarea {
+      font-size: 16px;
+      border: auto #222E50;
+    }
+    button {
+      font-size: 16px;
+      padding: 12px;
+    }
+    .containerboxes{
+      flex-wrap: wrap;
+    }
+    .boxdireita{
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      border-radius: 10px;
+      border: 1px solid #f3d52e0e;
+      height: 20rem;
+    }
+
+    .texto{
+      display: flex;
+      text-align: center;
+      padding: 2em;
+      color: aliceblue;
+      font-size: 10px;
+    }
+    .imgs_box_direita{
+      display: flex;
+      justify-content: right;
+      align-items: right;
+      height: 15em;
+      border-radius: 30px;
+    }
+    .imgs_box_esquerda{
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      height: 15em;
+      border-radius: 30px;
+    }
+    .boxesquerda{
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      border-radius: 10px;
+      border: 1px solid #f3d52e0e;
+      height: 20rem;  
+    }
+    .divqr{
+      display: flex;
+      justify-content: center;
+    }
+    .divqr img{
+      display: block;
+      width: 100vw;
+      justify-content: center;
+    }
+    .text_exp{
+      display: flex;
+      text-align: center;
+      color: #fff;
+      font-size: 12px;
+    }
+    .linknstall{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding: 8px;
+    }
+    .containerinstall a{
+      font-size: 1em;
+      color: #090e1b;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 700;      
+      background-color: #F3D62E;
+      border-radius: 20px;
+      padding: 8px 3rem;
+    }
+    #title_qs{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      gap: 10px;
+      color: #fff;
+      font-size: 1em;
+    }
+    #title_qs img{
+      height: 2vh;
+      align-items: end;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    header {
+        padding: 4px 5px;
+        font-size: 14px;
+        border-bottom: 2px solid #F3D62E;
+    }  
+    form {
+        padding: 40px;
+    }
+    input, textarea {
+      font-size: 20px;
+      border: auto #222E50;
+    }
+    button {
+      font-size: 20px;
+      padding: 12px;
+    }
+    .containerboxes{
+      flex-wrap: wrap;
+    }
+    .boxdireita{
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      border-radius: 10px;
+      border: 1px solid #f3d52e0e;
+      height: 28rem;
+    }
+
+    .texto{
+      display: flex;
+      text-align: center;
+      padding: 2em;
+      color: aliceblue;
+      font-size: 1em;
+    }
+    .imgs_box_direita{
+      display: flex;
+      justify-content: right;
+      align-items: right;
+      height: 23em;
+      border-radius: 30px;
+    }
+    .imgs_box_esquerda{
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      height: 23em;
+      border-radius: 30px;
+    }
+    .boxesquerda{
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      border-radius: 10px;
+      border: 1px solid #f3d52e0e;
+      height: 26rem;  
+    }
+    .divqr{
+      display: flex;
+      justify-content: center;
+    }
+    .divqr img{
+      display: block;
+      width: 100vw;
+      justify-content: center;
+    }
+    .text_exp{
+      display: flex;
+      text-align: center;
+      color: #fff;
+      font-size: 1em;
+    }
+    .linknstall{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+    }
+    .containerinstall a{
+      font-size: 1.2em;
+      color: #090e1b;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 700;      
+      background-color: #F3D62E;
+      border-radius: 20px;
+      padding: 8px 3rem;
+    }
+    #title_qs{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      gap: 10px;
+      color: #fff;
+      font-size: 1.5em;
+    }
+    #title_qs img{
+      height: 2.5vh;
+      align-items: end;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    form {
+    padding: 40px;
+    }
+    input, textarea {
+    font-size: 20px;
+    border: auto #222E50;
+    }
+    button {
+    font-size: 20px;
+    padding: 12px;
+    }
+    .boxdireita{
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      border-radius: 10px;
+      border: 1px solid #f3d52e0e;
+      height: 34rem;
+    }
+    .containerboxes{
+      flex-wrap: wrap;
+    }
+
+    .texto{
+      display: flex;
+      text-align: center;
+      padding: 2em;
+      color: aliceblue;
+      font-size: 1.3em;
+      background-color: transparent;
+    }
+    .imgs_box_direita{
+      display: flex;
+      justify-content: right;
+      align-items: right;
+      height: 27em;
+      border-radius: 30px;
+    }
+    .imgs_box_esquerda{
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      height: 27em;
+      border-radius: 30px;
+    }
+    .boxesquerda{
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      border-radius: 10px;
+      border: 1px solid #f3d52e0e;
+      height: 34rem;
+    }
+    .divqr{
+      display: flex;
+      justify-content: center;
+    }
+    .divqr img{
+      display: block;
+      width: 100vw;
+      justify-content: center;
+    }
+    .text_exp{
+      display: flex;
+      text-align: center;
+      color: #fff;
+      font-size: 1em;
+    }
+    .linknstall{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+    }
+    .containerinstall a{
+      font-size: 1.2em;
+      color: #090e1b;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 700;      
+      background-color: #F3D62E;
+      border-radius: 20px;
+      padding: 8px 3rem;
+    }
+    #title_qs{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      gap: 10px;
+      color: #fff;
+      font-size: 1.7em;
+    }
+    #title_qs img{
+      height: 3vh;
+      align-items: end;
+    }
+}
+
+@media (min-width:1024px){
+   form {
+    padding: 40px;
+    }
+    input, textarea {
+    font-size: 20px;
+    border: auto #222E50;
+    }
+    button {
+    font-size: 20px;
+    padding: 12px;
+    }
+    .boxdireita{
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      border-radius: 10px;
+      border: 1px solid #f3d52e0e;
+      height: 34rem;
+    }
+    .texto{
+      display: flex;
+      text-align: center;
+      padding: 2em;
+      color: aliceblue;
+      font-size: 1.3em;
+      background-color: transparent;
+    }
+    .imgs_box_direita{
+      display: flex;
+      justify-content: right;
+      align-items: right;
+      height: 27em;
+      border-radius: 30px;
+    }
+    .imgs_box_esquerda{
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      height: 27em;
+      border-radius: 30px;
+    }
+    .boxesquerda{
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      border-radius: 10px;
+      border: 1px solid #f3d52e0e;
+      height: 34rem;
+    }
+    .divqr{
+      display: flex;
+      justify-content: center;
+    }
+    .divqr img{
+      display: block;
+      width: 55vw;
+      justify-content: center;
+    }
+    .text_exp{
+      display: flex;
+      text-align: center;
+      color: #fff;
+      font-size: 1.2em;
+    }
+    .linknstall{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    .containerinstall a{
+      font-size: 1.7em;
+      color: #090e1b;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 700;      
+      background-color: #F3D62E;
+      border-radius: 20px;
+      padding: 10px 4rem;
+    }
+}
