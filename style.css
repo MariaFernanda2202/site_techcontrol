@@ -6,82 +6,14 @@ body{
     margin: 0;
     background-color:#1b2235
 }
-
 header {
     background-color: #1b2235;
     color: white;
     padding: 8px 20px;
     border-bottom: 2px solid #F3D62E;
   }
-
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: #1b2235;
-  }
-
-  .footer-logo img {
-    height: 40px;
-    background-color: #1b2235;
-    border: 0;
-    margin: 0;
-  }
-
-  .footer-menu {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-    font-size: 1.1em;
-    background-color: #1b2235;
-    font-family: "Kodchasan", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-
-  }
-
-  .footer-menu a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    background-color: #1b2235;
-  }
-
-  .footer-menu a:hover {
-    text-decoration: underline;
-    text-decoration: none;
-    background-color: #1b2235;
-  }
-
-  @media (max-width: 600px) {
-    .footer-container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      background-color: #1b2235;
-    }
-
-    .footer-menu {
-      margin-top: 15px;
-      justify-content: center;
-      background-color: #1b2235;
-    }
-  }
-
-  
-.container_form {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-.titulo_form{
-    font-family: "Braah One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    display: flex;
-    color: white;
-    justify-content: center;
+p{
+  flex-wrap: wrap;
 }
 form {
     padding: 30px;
@@ -109,7 +41,6 @@ input, textarea {
     box-shadow: none;
     color: #ffffff;
 }
-
 button {
     background-color: #FBE541;
     margin-top: 20px;
@@ -120,11 +51,9 @@ button {
     color: #1b2235;
     font-size: 15px;
 }
-
 button:hover {
     background-color: #1b2235 ;
     color: #F3D62E;
-    
 }
 select {
     display: flex;
@@ -140,6 +69,58 @@ select {
 select:focus {
   outline: none;
   box-shadow: #F3D62E;
+}
+footer{
+  background-color: #090e1b;
+  height: 40vh;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #1b2235;
+}
+.header-logo img {
+  height: 40px;
+  background-color: #1b2235;
+  border: 0;
+  margin: 0;
+}
+.header-menu {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  font-size: 1.1em;
+  background-color: #1b2235;
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+
+}
+.header-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  background-color: #1b2235;
+}
+.header-menu a:hover {
+  text-decoration: underline;
+  text-decoration: none;
+  background-color: #1b2235;
+}
+.container_form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+.titulo_form{
+    font-family: "Braah One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    color: white;
+    justify-content: center;
 }
 .text_exp{
   display: flex;
@@ -157,14 +138,13 @@ select:focus {
   justify-content: center; 
   align-items: center;
   font-family: "Kodchasan", sans-serif;
-  font-weight: 400;
+  font-weight: 400px;
   font-style: normal;
   border-radius: 10px;
   border: 1px solid #f3d52e0e;
   height: 30rem;
   margin: 10px;
 }
-
 .texto{
   display: flex;
   text-align: center;
@@ -198,12 +178,14 @@ select:focus {
   height: 30rem;
   margin: 10px;
 }
-
+.containerinstall{
+      padding: 0px 28px;
+    }
 .containerinstall a{
   display: flex;
   color: white;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 500px;
   background-color: #1b2235;
   justify-content: center;
 }
@@ -216,31 +198,430 @@ select:focus {
   width: 50vw;
   justify-content: center;
 }
-
-footer{
-  background-color: #090e1b;
-  height: 40vh;
-}
-/* .itensusados{
+#title_qs{
   display: flex;
-  gap: 40%;
-  background-color: #1b2235;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 2em;
 }
-.itensusados img{
-  width: 40px;
-} */
-@media (max-width: 480px) {
+#title_qs img{
+  height: 3.7vh;
+  align-items: end;
+}
+.exp_qs{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  padding: 4em;
+}
+
+@media (min-width: 300px) and (max-width:480px){
+    header {
+      padding: 4px 5px;
+      font-size: 12px;
+      border-bottom: 2px solid #F3D62E;
+    }
     form {
-    padding: 20px;
+      padding: 20px;
     }
     input, textarea {
-    font-size: 16px;
+      font-size: 16px;
+      border: auto #222E50;
+    }
+    button {
+      font-size: 16px;
+      padding: 12px;
+    }
+    .containerboxes{
+      flex-wrap: wrap;
+    }
+    .boxdireita{
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      border-radius: 10px;
+      border: 1px solid #f3d52e0e;
+      height: 20rem;
+    }
+
+    .texto{
+      display: flex;
+      text-align: center;
+      padding: 2em;
+      color: aliceblue;
+      font-size: 10px;
+    }
+    .imgs_box_direita{
+      display: flex;
+      justify-content: right;
+      align-items: right;
+      height: 15em;
+      border-radius: 30px;
+    }
+    .imgs_box_esquerda{
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      height: 15em;
+      border-radius: 30px;
+    }
+    .boxesquerda{
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      border-radius: 10px;
+      border: 1px solid #f3d52e0e;
+      height: 20rem;  
+    }
+    .divqr{
+      display: flex;
+      justify-content: center;
+    }
+    .divqr img{
+      display: block;
+      width: 100vw;
+      justify-content: center;
+    }
+    .text_exp{
+      display: flex;
+      text-align: center;
+      color: #fff;
+      font-size: 12px;
+    }
+    .linknstall{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding: 8px;
+    }
+    .containerinstall a{
+      font-size: 1em;
+      color: #090e1b;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 700;      
+      background-color: #F3D62E;
+      border-radius: 20px;
+      padding: 8px 3rem;
+    }
+    #title_qs{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      gap: 10px;
+      color: #fff;
+      font-size: 1em;
+    }
+    #title_qs img{
+      height: 2vh;
+      align-items: end;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    header {
+        padding: 4px 5px;
+        font-size: 14px;
+        border-bottom: 2px solid #F3D62E;
+    }  
+    form {
+        padding: 40px;
+    }
+    input, textarea {
+      font-size: 20px;
+      border: auto #222E50;
+    }
+    button {
+      font-size: 20px;
+      padding: 12px;
+    }
+    .containerboxes{
+      flex-wrap: wrap;
+    }
+    .boxdireita{
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      border-radius: 10px;
+      border: 1px solid #f3d52e0e;
+      height: 28rem;
+    }
+
+    .texto{
+      display: flex;
+      text-align: center;
+      padding: 2em;
+      color: aliceblue;
+      font-size: 1em;
+    }
+    .imgs_box_direita{
+      display: flex;
+      justify-content: right;
+      align-items: right;
+      height: 23em;
+      border-radius: 30px;
+    }
+    .imgs_box_esquerda{
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      height: 23em;
+      border-radius: 30px;
+    }
+    .boxesquerda{
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      border-radius: 10px;
+      border: 1px solid #f3d52e0e;
+      height: 26rem;  
+    }
+    .divqr{
+      display: flex;
+      justify-content: center;
+    }
+    .divqr img{
+      display: block;
+      width: 100vw;
+      justify-content: center;
+    }
+    .text_exp{
+      display: flex;
+      text-align: center;
+      color: #fff;
+      font-size: 1em;
+    }
+    .linknstall{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+    }
+    .containerinstall a{
+      font-size: 1.2em;
+      color: #090e1b;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 700;      
+      background-color: #F3D62E;
+      border-radius: 20px;
+      padding: 8px 3rem;
+    }
+    #title_qs{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      gap: 10px;
+      color: #fff;
+      font-size: 1.5em;
+    }
+    #title_qs img{
+      height: 2.5vh;
+      align-items: end;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    form {
+    padding: 40px;
+    }
+    input, textarea {
+    font-size: 20px;
     border: auto #222E50;
     }
     button {
-    font-size: 16px;
+    font-size: 20px;
     padding: 12px;
+    }
+    .boxdireita{
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      border-radius: 10px;
+      border: 1px solid #f3d52e0e;
+      height: 34rem;
+    }
+    .containerboxes{
+      flex-wrap: wrap;
+    }
+
+    .texto{
+      display: flex;
+      text-align: center;
+      padding: 2em;
+      color: aliceblue;
+      font-size: 1.3em;
+      background-color: transparent;
+    }
+    .imgs_box_direita{
+      display: flex;
+      justify-content: right;
+      align-items: right;
+      height: 27em;
+      border-radius: 30px;
+    }
+    .imgs_box_esquerda{
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      height: 27em;
+      border-radius: 30px;
+    }
+    .boxesquerda{
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      border-radius: 10px;
+      border: 1px solid #f3d52e0e;
+      height: 34rem;
+    }
+    .divqr{
+      display: flex;
+      justify-content: center;
+    }
+    .divqr img{
+      display: block;
+      width: 100vw;
+      justify-content: center;
+    }
+    .text_exp{
+      display: flex;
+      text-align: center;
+      color: #fff;
+      font-size: 1em;
+    }
+    .linknstall{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+    }
+    .containerinstall a{
+      font-size: 1.2em;
+      color: #090e1b;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 700;      
+      background-color: #F3D62E;
+      border-radius: 20px;
+      padding: 8px 3rem;
+    }
+    #title_qs{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      gap: 10px;
+      color: #fff;
+      font-size: 1.7em;
+    }
+    #title_qs img{
+      height: 3vh;
+      align-items: end;
     }
 }
 
-
+@media (min-width:1024px){
+   form {
+    padding: 40px;
+    }
+    input, textarea {
+    font-size: 20px;
+    border: auto #222E50;
+    }
+    button {
+    font-size: 20px;
+    padding: 12px;
+    }
+    .boxdireita{
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      border-radius: 10px;
+      border: 1px solid #f3d52e0e;
+      height: 34rem;
+    }
+    .texto{
+      display: flex;
+      text-align: center;
+      padding: 2em;
+      color: aliceblue;
+      font-size: 1.3em;
+      background-color: transparent;
+    }
+    .imgs_box_direita{
+      display: flex;
+      justify-content: right;
+      align-items: right;
+      height: 27em;
+      border-radius: 30px;
+    }
+    .imgs_box_esquerda{
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      height: 27em;
+      border-radius: 30px;
+    }
+    .boxesquerda{
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      border-radius: 10px;
+      border: 1px solid #f3d52e0e;
+      height: 34rem;
+    }
+    .divqr{
+      display: flex;
+      justify-content: center;
+    }
+    .divqr img{
+      display: block;
+      width: 55vw;
+      justify-content: center;
+    }
+    .text_exp{
+      display: flex;
+      text-align: center;
+      color: #fff;
+      font-size: 1.2em;
+    }
+    .linknstall{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    .containerinstall a{
+      font-size: 1.7em;
+      color: #090e1b;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: 700;      
+      background-color: #F3D62E;
+      border-radius: 20px;
+      padding: 10px 4rem;
+    }
+}
