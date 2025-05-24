@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Braah+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <title>Registrando demanda</title>
 </head>
 <body>
@@ -32,25 +33,62 @@
             <label for="nome">Nome completo:</label>
             <input type="text" id="nome" name="nome" required>
 
+            <label for="telefone">Nº de telefone: </label>
+            <input type="text" id="telefone" name="telefone" required pattern="\d{11}" title="Adicione o DDD, apenas dígitos.">
+
             <label for="cpf">CPF:</label>
             <input type="text" id="cpf" name="cpf" required pattern="\d{11}" title="Digite 11 números, apenas dígitos.">
 
-             <label for="opcoes">Estilo de equipamento</label>
-              <select id="opcoes" name="opcoes">
-                <option value="" disabled selected>Escolher opções</option>
-                <option value="valor1">Ar condicionado</option>
-                <option value="valor2">Lava louça</option>
-                <option value="valor3">Bebedouro</option>
-              </select>
+            <label for="cep">Digite seu CEP: </label>
+            <input type="text" id="cep" required pattern="\d{8}" title="Digite apenas 8 números, sem dígitos.">
 
+            <label for="Endereço">Endereço: </label>
+            <input type="text" id="endereco" name="endereco">
+
+            <label for="numero">Número: </label>
+            <input type="text" id="numero" name="numero">
+
+            <label for="">Item com problema: </label>
+            <input type="text" id="item_problema" name="item_problema" required >
 
             <label for="mensagem">Explique melhor sua demanda:</label>
-            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            <textarea id="mensagem" name="mensagem" rows="5" required ></textarea>
 
-            <button type="submit">Enviar</button>
+            <button type="button">Enviar</button>
         </form>
     </div>
 
+
+
+<script>
+  const supabaseUrl = 'https://stcyzsunshwtfrfjjnyc.supabase.co';
+  const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN0Y3l6c3Vuc2h3dGZyZmpqbnljIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0MDE3NzY0OSwiZXhwIjoyMDU1NzUzNjQ5fQ.ZC8RAD7yE8RcEEyuQ7qQdZb-EbQMzW9Khs7CNvgQIRQ';
+  const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+
+  document.querySelector("form").addEventListener("button", async function (e) {
+    e.preventDefault();
+
+    const data = {
+      nome: document.getElementById("nome").value,
+      telefone: document.getElementById("cpf").value,
+      cpf: document.getElementsByName("cpf")[1].value,
+      cep: document.getElementById("cep").value,
+      endereco: document.getElementById("Endereço").value,
+      numero: document.querySelector("input[for='numero']").value,
+      item_problema: document.querySelectorAll("input[type='text']")[5].value,
+      mensagem: document.getElementById("mensagem").value
+    };
+
+    const { error } = await supabase.from("demandas").insert([data]);
+
+    if (error) {
+      alert("Erro ao enviar: " + error.message);
+    } else {
+      alert("Demanda enviada com sucesso!");
+      e.target.reset();
+      }
+    });
+</script>
 
     
 </body>
