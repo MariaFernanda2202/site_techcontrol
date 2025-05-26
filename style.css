@@ -70,11 +70,7 @@ select:focus {
   outline: none;
   box-shadow: #F3D62E;
 }
-footer{
-  background-color: #030408;
-  height: 40vh;
-  width: 100vw;
-}
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -133,6 +129,14 @@ footer{
   padding: 4em;
   justify-content: center;
   display: flex;
+  transition: 
+    transform 1s cubic-bezier(0.25, 0.1, 0.25, 1),
+    box-shadow 1s ease;
+  transform: scale(1);
+}
+.containerboxes div:hover{
+  transform: scale(1.01); 
+  z-index: 2;
 }
 .boxdireita{
   display: flex;
@@ -225,38 +229,71 @@ footer{
 .imgs_suporte{
   display: flex;
   justify-content: space-around;
-  border-top: 1px solid #F3D62E;  
+  border-top: 1px solid #F3D62E; 
+  border-bottom: 1px solid #F3D62E;
   width: 100vw;
   height: 7vh;
-  background-color: #0a112b;
+  background-color: #0B1120;
 }
 .imgs_suporte img{
   background-color: transparent;
   height: 65%;
   padding-top: 0.5em;
-  animation: scroll 50s linear infinite;
 }
 .itensusados{
   display: flex;
   width: 100%;
-  height: 100%;
-  background-color: #0a112b;
+  height: 5vh;
 }
-.itensusados span {
-  overflow: hidden;
+
+footer{
+  background-color: #0B1120;
+  height: 40vh;
+  width: 100;
+  color: #F3D62E;
+}
+
+.footer-container {
+  padding-top: 3rem;
+  max-width: 90rem;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 60px;
-  height: 60px;
-  margin: 0 10px;
-  border-radius: 50%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: transparent;
 }
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-5000%);
-  }
+
+.footer-column {
+  flex: 1;
+  padding: 0 20px;
+  background-color: transparent;
+}
+
+.footer-column h2 {
+  font-size: 2em;
+  color: #F3D62E;
+  background-color: transparent;
+}
+
+.footer-column ul {
+  background-color: transparent;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.5em;
+}
+
+.footer-column ul li {
+  background-color: transparent;
+  padding: 10px 0px;
+}
+
+.footer-column a {
+  background-color: transparent;
+  color: #F3D62E;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
 }

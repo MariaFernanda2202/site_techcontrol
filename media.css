@@ -104,6 +104,30 @@
       height: 2vh;
       align-items: end;
     }
+    .logotitle{
+     padding-top: 0.5px;
+    }
+    .container_form {
+      padding: 10px;
+    }
+    .container_form label{
+      font-size: 14px;
+    }
+    footer{
+      height: 50vh;
+    }
+    .footer-column{
+      flex-wrap: wrap;
+    }
+    .footer-column h2 {
+      font-size: 1.2em;
+      color: #F3D62E;
+      background-color: transparent;
+      flex-wrap: wrap;
+    }
+    .footer-column ul {
+      font-size: 0.9em;
+    }
 }
 
 @media (min-width:481px) and (max-width:768px) {
@@ -212,6 +236,30 @@
       height: 2.5vh;
       align-items: end;
     }
+    .logotitle{
+     padding-top: 2px;
+    }
+    .container_form {
+      padding: 10px;
+    }
+    .container_form label{
+      font-size: 15px;
+    }
+    footer{
+      height: 50vh;
+    }
+    .footer-column{
+      flex-wrap: wrap;
+    }
+    .footer-column h2 {
+      font-size: 1.2em;
+      color: #F3D62E;
+      background-color: transparent;
+      flex-wrap: wrap;
+    }
+    .footer-column ul {
+      font-size: 0.9em;
+    }
 }
 
 @media (min-width:769px) and (max-width:1024px) {
@@ -316,6 +364,24 @@
       height: 3vh;
       align-items: end;
     }
+    .logotitle{
+     padding-top: 4px;
+    }
+    footer{
+      height: 60vh;
+    }
+    .footer-column{
+      flex-wrap: wrap;
+    }
+    .footer-column h2 {
+      font-size: 1.5em;
+      color: #F3D62E;
+      background-color: transparent;
+      flex-wrap: wrap;
+    }
+    .footer-column ul {
+      font-size: 1.1em;
+    }
 }
 
 @media (min-width:1024px){
@@ -402,5 +468,23 @@
       background-color: #F3D62E;
       border-radius: 20px;
       padding: 10px 4rem;
+    }
+    .logotitle{
+     padding-top: 6px;
+    }
+    footer{
+      height: 45vh;
+    }
+    .footer-column{
+      flex-wrap: wrap;
+    }
+    .footer-column h2 {
+      font-size: 1.7em;
+      color: #F3D62E;
+      background-color: transparent;
+      flex-wrap: wrap;
+    }
+    .footer-column ul {
+      font-size: 1.1em;
     }
 }
