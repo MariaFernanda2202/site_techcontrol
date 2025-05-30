@@ -125,8 +125,10 @@ select:focus {
   justify-content: center;
   color: #fff;
   font-size: 15px;
+  font-family: "Kodchasan", sans-serif;
 }
 .containerboxes{
+  flex-direction: column;
   padding: 4em;
   justify-content: center;
   display: flex;
@@ -221,8 +223,9 @@ select:focus {
   justify-content: center;
   text-align: center;
   color: #fff;
-  font-size: 20px;
-  padding: 4em;
+  font-size: 1.8em;
+  padding: 2em 7em;
+  font-family: "Kodchasan", sans-serif;
 }
 .logotitle{
   padding-top: 6px;

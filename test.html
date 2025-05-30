@@ -1,104 +1,266 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Formulário com Geolocalização</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Assistência técnica TechControl - suporte prático, rápido e eficiente em eletrônicos e dúvidas técnicas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Braah+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>TechControl - Assistência Técnica</title>
   <style>
-    label { display: block; margin-top: 10px; }
-    input, textarea { width: 300px; padding: 5px; margin-top: 5px; }
+    /* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1b2235;
+  color: #fff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #1b2235;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background-color: #1b2235;
+  border-bottom: 2px solid #F3D62E;
+  padding: 8px 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-logo img {
+  height: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 40px;
+  font-family: 'Kodchasan', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.header-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  background-color: #1b2235;
+  transition: color 0.3s ease;
+}
+
+.header-menu a:hover {
+  color: #F3D62E;
+  text-decoration: underline;
+}
+
+/* CONTAINER BOXES (SECTIONS PRINCIPAIS) */
+.containerboxes {
+  display: flex;
+  justify-content: center;
+  padding: 4em;
+  gap: 2em;
+  flex-wrap: wrap;
+  transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 1s ease;
+}
+
+.containerboxes div:hover {
+  transform: scale(1.02);
+  z-index: 2;
+  box-shadow: 0 0 15px #F3D62E;
+  border-color: #F3D62E;
+}
+
+.boxesquerda, .boxdireita {
+  background: #2a3150;
+  border-radius: 10px;
+  border: 1px solid #f3d52e0e;
+  padding: 1em;
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  min-height: 30rem;
+  font-family: 'Kodchasan', sans-serif;
+  font-weight: 400;
+  color: aliceblue;
+}
+
+.texto {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.imgs_box_esquerda, .imgs_box_direita {
+  height: 28em;
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+/* QUEM SOMOS */
+.quemsomos {
+  text-align: center;
+  padding: 4em 2em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#title_qs {
+  font-size: 2.5em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+#title_qs img {
+  height: 3.7vh;
+  vertical-align: middle;
+}
+
+.exp_qs {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-top: 1.5em;
+  line-height: 1.5;
+  font-family: 'Kodchasan', sans-serif;
+}
+
+/* CONTAINER INSTALL */
+.containerinstall {
+  padding: 2em 2em 4em;
+  background: #12172e;
+  text-align: center;
+}
+
+.boxinstall {
+  max-width: 400px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.text_exp {
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+  font-family: 'Kodchasan', sans-serif;
+}
+
+.linknstall a {
+  display: inline-block;
+  background-color: #FBE541;
+  color: #1b2235;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.
+}
   </style>
 </head>
 <body>
 
-  <h2>Formulário de Endereço</h2>
+<header>
+  <div class="header-container">
+    <div class="header-logo">
+      <img src="img/logo.png" alt="Logo TechControl" />
+    </div>
+    <nav class="header-menu" aria-label="Menu principal">
+      <a href="demanda_registro.html">Registrar Demanda</a>
+      <a href="#">Fale Conosco</a>
+      <a href="#">Entrar</a>
+    </nav>
+  </div>
+</header>
 
-  <form id="formulario">
-    <label for="cep">CEP:</label>
-    <input type="text" id="cep" maxlength="8" required>
+<main>
+  <section class="containerboxes" aria-label="Apresentação da empresa">
+    <article class="boxesquerda">
+      <img src="img/Working-amico.png" alt="Pessoa trabalhando com tecnologia" class="imgs_box_esquerda" />
+      <p class="texto">
+        Somos uma empresa de tecnologia dedicada a sanar dúvidas, superar obstáculos e consertar diversos eletrônicos com eficiência. Com apenas um clique, ajudamos você, sua equipe e seus negócios.
+      </p>
+    </article>
 
-    <label for="address">Endereço:</label>
-    <input type="text" id="address" name="address" required>
+    <article class="boxdireita">
+      <p class="texto">
+        Auxiliamos nossos clientes em problemas técnicos, oferecendo suporte prático e eficiente. Através do site, é possível tirar dúvidas e acompanhar todo o processo de resolução de forma simples e rápida.
+      </p>
+      <img src="img/Product teardown-amico.png" alt="Ilustração do processo de conserto de produto" class="imgs_box_direita" />
+    </article>
+  </section>
 
-    <label for="numero">Número:</label>
-    <input type="text" id="numero" name="numero" required>
+  <section class="quemsomos" aria-labelledby="title_qs">
+    <h1 id="title_qs">
+      O que é a <img class="logotitle" src="img/TechControl.png" alt="Logo TechControl" />
+    </h1>
+    <p class="exp_qs">
+      Na TechControl, oferecemos suporte técnico confiável e eficiente para quem busca soluções práticas com agilidade. Nosso compromisso é entregar excelência em cada atendimento, com foco total na satisfação dos nossos clientes.
+    </p>
+  </section>
 
-    <label for="cidade">Cidade:</label>
-    <input type="text" id="cidade" name="cidade" required>
+  <section class="containerinstall" aria-label="App TechControl para download">
+    <div class="boxinstall">
+      <p class="text_exp">Gostaria de saber mais? Teste nosso aplicativo:</p>
+      <div class="linknstall">
+        <a href="app/techcontrol.apk" download>Download</a>
+      </div>
+      <div class="divqr">
+        <img src="img/install.png" alt="QR code para download do aplicativo TechControl" />
+      </div>
+    </div>
+  </section>
+</main>
 
-    <label for="estado">Estado:</label>
-    <input type="text" id="estado" name="estado" required>
+<footer>
+  <div class="footer-container" role="contentinfo">
+    <div class="footer-column">
+      <h2>Contato</h2>
+      <ul>
+        <li><a href="https://www.telecontrol.com.br/index.html#tm-area-contact">Entrar em contato conosco</a></li>
+        <li><a href="demanda_registro.html">Registrar demanda</a></li>
+      </ul>
+    </div>
 
-    <!-- Campos escondidos para envio -->
-    <input type="hidden" id="latitude" name="latitude">
-    <input type="hidden" id="longitude" name="longitude">
+    <div class="footer-column">
+      <h2>Informações</h2>
+      <ul>
+        <li><a href="index.html">Saber mais</a></li>
+        <li><a href="https://www.telecontrol.com.br/index.html">Quem é a Telecontrol</a></li>
+      </ul>
+    </div>
 
-    <button type="submit">Enviar</button>
-  </form>
+    <div class="footer-column">
+      <h2>Serviços</h2>
+      <ul>
+        <li><a href="https://www.telecontrol.com.br/index.html#solucoes">Serviços</a></li>
+      </ul>
+    </div>
 
-  <script>
-    // Passo 1: Buscar dados do CEP e preencher rua, cidade e estado
-    document.getElementById('cep').addEventListener('blur', async () => {
-      const cep = document.getElementById('cep').value.replace(/\D/g, '');
-      if (cep.length !== 8) return;
-
-      try {
-        const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
-        const data = await response.json();
-        if (!data.erro) {
-          document.getElementById('address').value = data.logradouro;
-          document.getElementById('cidade').value = data.localidade;
-          document.getElementById('estado').value = data.uf;
-        }
-      } catch (e) {
-        alert('Erro ao buscar CEP');
-      }
-    });
-
-    // Passo 2: Quando digitar o número, buscar latitude e longitude
-    document.getElementById('numero').addEventListener('blur', async () => {
-      const rua = document.getElementById('address').value;
-      const numero = document.getElementById('numero').value;
-      const cidade = document.getElementById('cidade').value;
-      const estado = document.getElementById('estado').value;
-
-      if (!rua || !numero || !cidade || !estado) return;
-
-      const addressCompleto = `${rua}, ${numero}, ${cidade}, ${estado}, Brasil`;
-
-      const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(addressCompleto)}`;
-
-      try {
-        const response = await fetch(url, {
-          headers: {
-            'Accept-Language': 'pt-BR',
-            'User-Agent': 'SeuProjeto/1.0 (seu-email@exemplo.com)' // personalize se for público
-          }
-        });
-
-        const results = await response.json();
-
-        if (results.length > 0) {
-          document.getElementById('latitude').value = results[0].lat;
-          document.getElementById('longitude').value = results[0].lon;
-        } else {
-          alert('Local não encontrado.');
-        }
-
-      } catch (e) {
-        alert('Erro ao buscar coordenadas.');
-      }
-    });
-
-    // Apenas demonstração de envio
-    document.getElementById('formulario').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const dados = new FormData(this);
-      for (const [chave, valor] of dados.entries()) {
-        console.log(`${chave}: ${valor}`);
-      }
-      alert('Formulário enviado com sucesso!');
-    });
-  </script>
+    <div class="footer-column">
+      <h2>Desenvolvedores</h2>
+      <ul>
+        <li><a href="https://linkedin.com/in/dev_exemplo" target="_blank" rel="noopener noreferrer">LinkedIn: Dev Exemplo</a></li>
+        <li><a href="https://linkedin.com/in/dev_exemplo" target="_blank" rel="noopener noreferrer">LinkedIn: Dev Exemplo</a></li>
+        <li><a href="https://linkedin.com/in/dev_exemplo" target="_blank" rel="noopener noreferrer">LinkedIn: Dev Exemplo</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>

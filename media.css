@@ -128,6 +128,9 @@
     .footer-column ul {
       font-size: 0.9em;
     }
+    .exp_qs, .texto{
+      font-size: 1em;
+    }
 }
 
 @media (min-width:481px) and (max-width:768px) {
@@ -260,6 +263,9 @@
     .footer-column ul {
       font-size: 0.9em;
     }
+    .exp_qs, .texto{
+      font-size: 1.2em;
+    }
 }
 
 @media (min-width:769px) and (max-width:1024px) {
@@ -381,6 +387,9 @@
     }
     .footer-column ul {
       font-size: 1.1em;
+    }
+    .exp_qs, .texto{
+      font-size: 1.5em;
     }
 }
 
