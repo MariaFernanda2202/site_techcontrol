@@ -110,6 +110,10 @@ select:focus {
       display: flex;
       justify-content: center;
       align-items: center;
+<<<<<<< HEAD
+=======
+      padding-bottom: 2rem;
+>>>>>>> master
     }
 .titulo_form{
     font-family: "Braah One", sans-serif;
@@ -226,6 +230,7 @@ select:focus {
 .logotitle{
   padding-top: 6px;
 }
+<<<<<<< HEAD
 .imgs_suporte{
   display: flex;
   justify-content: space-around;
@@ -245,6 +250,9 @@ select:focus {
   width: 100%;
   height: 5vh;
 }
+=======
+
+>>>>>>> master
 
 footer{
   background-color: #0B1120;
