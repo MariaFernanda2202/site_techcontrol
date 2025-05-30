@@ -110,6 +110,7 @@ select:focus {
       display: flex;
       justify-content: center;
       align-items: center;
+      padding-bottom: 2rem;
     }
 .titulo_form{
     font-family: "Braah One", sans-serif;
